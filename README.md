@@ -3,6 +3,8 @@
 ### **The MicroPython Wearable OS.**
 **High-performance firmware for the RP2040 hardware ecosystem.** Optimized for the GC9A01 circular display and QMI8658 inertial sensors, RPwatch is a framework for building responsive, low-power wearable interfaces.
 
+![RP2040 Watch Display](./docs/img/rp2040-w-color_bg.jpg)
+
 ---
 
 ## 🚀 Core Capabilities
