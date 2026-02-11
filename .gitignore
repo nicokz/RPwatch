@@ -1,0 +1,12 @@
+# MicroPython / Python
+__pycache__/
+*.pyc
+.pyenv/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Thonny or IDE files
+.thonny/
+.vscode/
