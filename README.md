@@ -55,6 +55,36 @@ def draw(self):
 
 ---
 
+---
+
+## 🚀 Quick Start
+
+### 1. Requirements
+* **MicroPython Firmware**: [V1.22+](https://micropython.org/download/RPI_PICO_W/) (Standard RP2040/Pico W build).
+* **Hardware**: RP2040 with GC9A01 Circular Display & QMI8658 IMU.
+* **Toolchain**: Install `mpremote` for fast deployment:
+  ```bash
+  pip install mpremote
+  ```
+
+### 2. Installation & Deployment
+Connect your watch via USB and run the following commands to sync the local project folders to your device:
+
+```bash
+# Clone the repository
+git clone [https://github.com/nicokz/RPwatch.git](https://github.com/nicokz/RPwatch.git)
+cd RPwatch
+
+# Deploy core folders and main entry point
+mpremote fs cp -r watch/ :
+mpremote fs cp -r fonts/ :
+mpremote fs cp -r images/ :
+mpremote fs cp main.py :
+
+# Soft-reset to start the app
+mpremote reset
+```
+
 ## 🏁 The Bottom Line
 RPwatch isn't just a collection of scripts; it's a specialized rendering engine for the RP2040. It proves that MicroPython can be used for high-speed, visually rich wearable tech when you work close to the silicon.
 
